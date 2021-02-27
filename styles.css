@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background: #3d3d3d;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+ul li {
+  margin: 40px 40px;
+}
+ul li a .fa {
+  font-size: 40px;
+  color: #3d3d3d;
+  line-height: 80px;
+  transition: 0.5s;
+}
+ul li a {
+  position: relative;
+  display: block;
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  text-align: center;
+  transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
+  transition: 0.5s;
+  box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
+}
+ul li a::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  height: 100%;
+  width: 20px;
+  background: #b2b2b2;
+  transition: 0.5s;
+  transform: rotate(0deg) skewY(-45deg);
+}
+ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: -10px;
+  height: 20px;
+  width: 100%;
+  background: #e5e5e5;
+  transition: 0.5s;
+  transform: rotate(0deg) skewX(-45deg);
+}
+ul li a:hover {
+  transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+  box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
+}
+ul li a:hover .fa {
+  color: #fff;
+}
+
+ul li:hover:nth-child(1) a {
+  background: #3b5999;
+}
+ul li:hover:nth-child(1) a::before {
+  background: #2f477a;
+}
+ul li:hover:nth-child(1) a::after {
+  background: #4e69a3;
+}
+
+ul li:hover:nth-child(2) a {
+  background: #55acee;
+}
+ul li:hover:nth-child(2) a::before {
+  background: #4489be;
+}
+ul li:hover:nth-child(2) a::after {
+  background: #66b4ef;
+}
+
+ul li:hover:nth-child(3) a {
+  background: #dd4b39;
+}
+ul li:hover:nth-child(3) a::before {
+  background: #b03c2d;
+}
+ul li:hover:nth-child(3) a::after {
+  background: #e05d4c;
+}
+
+ul li:hover:nth-child(4) a {
+  background: #0077b5;
+}
+ul li:hover:nth-child(4) a::before {
+  background: #005f90;
+}
+ul li:hover:nth-child(4) a::after {
+  background: #1984bc;
+}
+
+ul li:hover:nth-child(5) a {
+  background: #e4405f;
+}
+ul li:hover:nth-child(5) a::before {
+  background: #b6334c;
+}
+ul li:hover:nth-child(5) a::after {
+  background: #e6536f;
+}
